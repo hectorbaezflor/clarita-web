@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarita by Jime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+  <a href="#" class="logo">Clarita <em>by Jime</em></a>
+  <button class="burger" id="burgerBtn">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul class="menu" id="menuList">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+  <div class="hero-overlay">
+    <h1>Clarita <em>by Jime</em></h1>
+    <p>Collares mil vueltas, pulseras y tobilleras hechas con cariño.</p>
+    <a href="#productos" class="btn">Ver productos</a>
+  </div>
+</section>
+  </section>
+
+  <section id="productos" class="productos">
+  <h2>Productos</h2>
+
+  <nav class="filtros">
+    <button class="filtro activo" data-categoria="todo">Todo</button>
+    <button class="filtro" data-categoria="collares">Collares</button>
+    <button class="filtro" data-categoria="pulseras">Pulseras</button>
+    <button class="filtro" data-categoria="correas">Correas</button>
+    <button class="filtro" data-categoria="tobilleras">Tobilleras</button>
+  </nav>
+
+  <div class="grid">
+    <article class="card" data-categoria="collares">
+      <div class="thumb"><span>Foto</span></div>
+      <div class="card-body">
+        <span class="card-cat">Collares</span>
+        <h3>Collar mil vueltas coral</h3>
+        <p class="card-desc">Tejido a mano en tonos coral, ideal para looks veraniegos.</p>
+        <span class="card-precio">$8.500</span>
+      </div>
+    </article>
+
+    <article class="card" data-categoria="collares">
+      <div class="thumb"><span>Foto</span></div>
+      <div class="card-body">
+        <span class="card-cat">Collares</span>
+        <h3>Collar mil vueltas pastel</h3>
+        <p class="card-desc">Tejido a mano en tonos pastel.</p>
+        <span class="card-precio">$7.000</span>
+      </div>
+    </article>
+
+    <article class="card" data-categoria="pulseras">
+      <div class="thumb"><span>Foto</span></div>
+      <div class="card-body">
+        <span class="card-cat">Pulseras</span>
+        <h3>Pulsera fina dorada</h3>
+        <p class="card-desc">Pulsera delicada bañada en oro, se puede usar sola o combinada.</p>
+        <span class="card-precio">$4.200</span>
+      </div>
+    </article>
+
+    <article class="card" data-categoria="correas">
+      <div class="thumb"><span>Foto</span></div>
+      <div class="card-body">
+        <span class="card-cat">Correas</span>
+        <h3>Correa de celular</h3>
+        <p class="card-desc">Correa de celular, ideal para tu celu.</p>
+        <span class="card-precio">$4.200</span>
+      </div>
+    </article>
+
+    <article class="card" data-categoria="tobilleras">
+      <div class="thumb"><span>Foto</span></div>
+      <div class="card-body">
+        <span class="card-cat">Tobilleras</span>
+        <h3>Tobillera cuerda</h3>
+        <p class="card-desc">Tobillera delicada.</p>
+        <span class="card-precio">$4.200</span>
+      </div>
+    </article>
+
+
+  </div>
+</section>
+
+<section id="nosotros" class="nosotros">
+  <h2>Nosotros</h2>
+  <p>
+    Clarita nació de las ganas de crear piezas simples y con onda para el día a día.
+    Cada collar, pulsera y tobillera está hecho a mano, cuidando cada detalle.
+  </p>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <p>¿Te gustó algo o tenés una consulta? Escribinos, con gusto te ayudamos.</p>
+  <div class="contacto-links">
+  <a href="https://wa.me/5491122334455" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+  <a href="https://instagram.com/clarita" target="_blank">
+    <i class="fa-brands fa-instagram"></i> Instagram
+  </a>
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Clarita by Jime ·Hecho a mano · Buenos Aires</p>
+</footer>
+
+
+
+
+
+
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
