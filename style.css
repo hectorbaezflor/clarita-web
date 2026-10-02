@@ -55,6 +55,13 @@ a {
 .logo {
   font-family: 'Fraunces', serif;
   font-size: 30px;
+  display: block;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .menu {
