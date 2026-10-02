@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel · Clarita by Jime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+  <div id="loginBox" class="login-box">
+    <h2>Panel de Clarita</h2>
+    <p>Ingresá con tu cuenta para administrar el catálogo.</p>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="loginBtn" class="btn">Entrar</button>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <div id="panelBox" class="panel-box hidden">
+    <div class="panel-top">
+  <h2>Panel de Clarita</h2>
+  <div style="display:flex; align-items:center; gap:14px;">
+    <span id="userEmail" style="font-size:13px; color:#7A5E68;"></span>
+    <button id="logoutBtn" class="btn outline">Cerrar sesión</button>
+  </div>
+</div>
+    <form id="prodForm" class="prod-form">
+  <label>Nombre</label>
+  <input type="text" id="pNombre" required>
+
+  <label>Categoría</label>
+  <select id="pCategoria">
+  <option value="Collares">Collares</option>
+  <option value="Pulseras">Pulseras</option>
+  <option value="Straps para Celulares">Strap para Celulares</option>
+  <option value="Tobilleras">Tobilleras</option>
+  <option value="Llaveros">Llaveros</option>
+</select>
+
+  <label>Precio</label>
+  <input type="text" id="pPrecio">
+
+  <label>Descripción</label>
+  <textarea id="pDescripcion"></textarea>
+
+  <label>Foto</label>
+  <input type="file" id="pFoto" accept="image/*">
+
+  <button type="submit" class="btn">Guardar producto</button>
+  <button type="button" class="btn outline hidden" id="cancelEditBtn">Cancelar edición</button>
+  <p id="formMsg"></p>
+</form>
+
+<h3>Productos cargados</h3>
+<div id="listaProductos"></div>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

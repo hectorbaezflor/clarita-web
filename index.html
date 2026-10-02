@@ -45,64 +45,12 @@
     <button class="filtro activo" data-categoria="todo">Todo</button>
     <button class="filtro" data-categoria="collares">Collares</button>
     <button class="filtro" data-categoria="pulseras">Pulseras</button>
-    <button class="filtro" data-categoria="straps">Strap para Celular</button>
+    <button class="filtro" data-categoria="straps">Strap para Celulares</button>
     <button class="filtro" data-categoria="tobilleras">Tobilleras</button>
     <button class="filtro" data-categoria="llaveros">Llaveros</button>
   </nav>
 
-  <div class="grid">
-    <article class="card" data-categoria="collares">
-      <div class="thumb"><span>Foto</span></div>
-      <div class="card-body">
-        <span class="card-cat">Collares</span>
-        <h3>Collar mil vueltas coral</h3>
-        <p class="card-desc">Tejido a mano en tonos coral, ideal para looks veraniegos.</p>
-        <span class="card-precio">$8.500</span>
-      </div>
-    </article>
-
-    <article class="card" data-categoria="collares">
-      <div class="thumb"><span>Foto</span></div>
-      <div class="card-body">
-        <span class="card-cat">Collares</span>
-        <h3>Collar mil vueltas pastel</h3>
-        <p class="card-desc">Tejido a mano en tonos pastel.</p>
-        <span class="card-precio">$7.000</span>
-      </div>
-    </article>
-
-    <article class="card" data-categoria="pulseras">
-      <div class="thumb"><span>Foto</span></div>
-      <div class="card-body">
-        <span class="card-cat">Pulseras</span>
-        <h3>Pulsera fina dorada</h3>
-        <p class="card-desc">Pulsera delicada bañada en oro, se puede usar sola o combinada.</p>
-        <span class="card-precio">$4.200</span>
-      </div>
-    </article>
-
-    <article class="card" data-categoria="straps">
-      <div class="thumb"><span>Foto</span></div>
-      <div class="card-body">
-        <span class="card-cat">Strap para Celulares</span>
-        <h3>Strap de celulares</h3>
-        <p class="card-desc">Strap de celular, ideal para tu celu.</p>
-        <span class="card-precio">$4.200</span>
-      </div>
-    </article>
-
-    <article class="card" data-categoria="tobilleras">
-      <div class="thumb"><span>Foto</span></div>
-      <div class="card-body">
-        <span class="card-cat">Tobilleras</span>
-        <h3>Tobillera cuerda</h3>
-        <p class="card-desc">Tobillera delicada.</p>
-        <span class="card-precio">$4.200</span>
-      </div>
-    </article>
-
-
-  </div>
+  <div class="grid" id="grid"></div>
 </section>
 
 <section id="nosotros" class="nosotros">
@@ -128,6 +76,7 @@
 
 <footer>
   <p>© 2026 Clarita by Jime ·Hecho a mano · Buenos Aires</p>
+  <a href="admin.html" class="admin-link">Panel de administración</a>
 </footer>
 
 
@@ -136,7 +85,7 @@
 
 
 </main>
-
-  <script src="script.js"></script>
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

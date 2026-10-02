@@ -1,0 +1,97 @@
+.admin-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-box {
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  border: 1px solid var(--sand);
+  font-family: inherit;
+}
+
+.login-box .btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.error {
+  color: #B24C4C;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.panel-box {
+  width: 100%;
+  max-width: 900px;
+}
+
+.panel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+
+.prod-form {
+  background: #fff;
+  border: 1px solid var(--sand);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.prod-form label {
+  display: block;
+  font-size: 12px;
+  color: #7A5E68;
+  margin: 12px 0 4px;
+}
+
+.prod-form input,
+.prod-form select,
+.prod-form textarea {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--sand);
+  font-family: inherit;
+}
+
+.prod-form button {
+  margin-top: 16px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid var(--sand);
+  background: #fff;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.item-row button {
+  background: none;
+  border: none;
+  color: #B24C4C;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
+.hidden {
+  display: none !important;
+}
